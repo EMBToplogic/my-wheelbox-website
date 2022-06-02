@@ -27,7 +27,7 @@ const NavbarList = ({ list, activeSegment, index }) => {
       x: 0,
       opacity: 1,
     },
-    exit: { x: 50, opacity: 0 },
+    exit: { x: 50, opacity: 0, width: "0%" },
     transition: {
       ease: [0.6, 0.01, -0.05, 0.95],
       duration: 0.2,
@@ -61,7 +61,8 @@ const NavbarList = ({ list, activeSegment, index }) => {
           className='navbar-li-item'
           spy={true}
           smooth={true}
-          offset={75}
+          duration={1000}
+          offset={index === 3 ? 75 : 0}
         >
           {list.toUpperCase()}
         </Link>
