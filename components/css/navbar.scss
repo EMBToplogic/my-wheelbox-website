@@ -1,0 +1,79 @@
+.navbar-container {
+    padding: 0% 5%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        img {
+            max-width: 100%;
+        }
+    }
+    .nav-container {
+        height: 100%;
+        .parent-ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: var(--white);
+            height: 100%;
+            margin: 0%;
+            .navbar-li-cont {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0% 20%;
+                .navbar-ind {
+                    height: 2px;
+                    width: 100%;
+                    content: '';
+                    background-color: var(--white);
+                    border-radius: 10px;
+                }
+                .navbar-li-item {
+                    cursor: pointer;
+                    font-weight: 500;
+                    color: var(--white) !important;
+                }
+            }
+            .parent-li {
+                padding: 5%;
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    line-height: 0;
+                }
+            }
+        }
+    }
+    .tcc-container {
+        background: var(--primary-gradient);
+        height: 30px;
+        width: 140px;
+        padding: 5px 20px;
+        color: var(--white);
+        font-size: .8em;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .background-container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+}
