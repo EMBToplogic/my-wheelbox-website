@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useGLTF } from "@react-three/drei";
 
 // Pages
 
@@ -12,6 +13,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 const App = () => {
+  useGLTF.preload("/Car.gltf");
+
   const [height, setHeight] = useState(window.innerHeight);
   const [width, setWidth] = useState(window.innerWidth);
 
