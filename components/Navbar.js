@@ -13,10 +13,6 @@ import { ArrowRight } from "react-feather";
 
 const NavbarList = ({ list, activeSegment, index }) => {
   const [isAnimated, setIsAnimated] = useState(false);
-  useEffect(() => {
-    console.log(isAnimated);
-    console.log(activeSegment);
-  }, [isAnimated]);
 
   const indicatorVariants = {
     initial: {
@@ -36,9 +32,7 @@ const NavbarList = ({ list, activeSegment, index }) => {
   };
 
   const handleMouseLeave = () => {
-    if (activeSegment !== index) {
-      setIsAnimated(false);
-    }
+    setIsAnimated(false);
   };
 
   const handleMouseEnter = () => {
@@ -55,6 +49,7 @@ const NavbarList = ({ list, activeSegment, index }) => {
         onMouseLeave={() => {
           handleMouseLeave();
         }}
+        whileHover={{ y: -3 }}
       >
         <Link
           to={list.toLowerCase()}
