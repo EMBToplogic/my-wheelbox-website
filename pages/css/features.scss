@@ -1,0 +1,52 @@
+.features-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: var(--secondary);
+    .inner-container {
+        height: 80%;
+        width: 90%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            height: 33.33%;
+            width: 100%;
+            .col {
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: baseline;
+                padding: 5%;
+                &.sm {
+                    height: 100%;
+                    width: 40%;
+                    background-color: var(--secondary);
+                }
+                &.md {
+                    height: 100%;
+                    width: 60%;
+                    background-color: var(--primary);
+                }
+                .title {
+                    font-size: 2em;
+                    color: var(--white);
+                }
+                .desc {
+                    font-size: .8em;
+                    color: var(--white);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+:root {
+    --none: none;
+    --primary: #003DBC;
+    --primary-l: #246AFD;
+    --primary-gradient: linear-gradient(0deg, #003DBC 0%, #246AFD 100%);
+    --secondary: #181A20;
+    --secondary-gradient: linear-gradient(0deg, var(--secondary) 0%, var(--tertiary) 100%);
+    --tertiary-gradient: linear-gradient(0deg, var(--tertiary-l) 0%, var(--tertiary) 100%);
+    --tertiary: #454955;
+    --tertiary-l: #5C6170;
+    --white: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Maven Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--tertiary);
+    overflow-x: hidden !important;
+}
+
+
+/* Headers */
+
+h1,
+h3 {
+    color: #0985F2;
+    font-weight: 100 !important;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+h2 {
+    color: white;
+    font-weight: 100 !important;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
+ul,
+ol {
+    list-style: none;
+    padding: 0%;
+}
+
+
+/* Set core root defaults */
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+
+/* Set core body defaults */
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+a {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: #24D9CE;
+    -webkit-tap-highlight-color: white;
+}
+
+
+/* Make images easier to work with */
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
